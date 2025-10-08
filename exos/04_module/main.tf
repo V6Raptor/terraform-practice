@@ -15,3 +15,9 @@ module "nginx1" {
   name          = var.name
   external_port = var.external_port
 }
+
+module "nginx2" {
+  source        = "./modules/nginx"
+  name          = var.name2
+  external_port = var.external_port2
+}
